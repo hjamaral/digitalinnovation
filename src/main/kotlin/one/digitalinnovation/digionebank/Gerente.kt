@@ -1,11 +1,11 @@
 package one.digitalinnovation.digionebank
 
-import src.main.kotlin.p.one.digitalinnovation.digionebank.Pessoa
-
 class Gerente(
     nome: String,
     cpf: String,
-    salario: Double
-) : Funcionario(nome, cpf, salario) {
+    salario: Double,
+    val senha: String
+) : Funcionario(nome = nome, cpf = cpf, salario = salario), Logavel {
     override fun calculoAuxilio() = salario * 0.50
+    override fun login(senha: String): Boolean = "senha123" == senha
 }
