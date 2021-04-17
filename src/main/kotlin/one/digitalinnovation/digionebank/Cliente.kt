@@ -9,5 +9,8 @@ class Cliente (
     val senha: String
 ) : Pessoa(nome, cpf), Logavel {
     override fun login(senha: String): Boolean = "123456" == senha
+    override fun login(): Boolean {
+        TODO("Not yet implemented")
+    }
 
 }
