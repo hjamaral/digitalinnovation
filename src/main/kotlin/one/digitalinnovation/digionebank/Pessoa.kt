@@ -1,6 +1,6 @@
 package src.main.kotlin.p.one.digitalinnovation.digionebank
 
-open class Pessoa(
+abstract class Pessoa(
     val nome: String,
     val cpf: String
 )
