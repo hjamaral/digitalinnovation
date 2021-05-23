@@ -23,8 +23,7 @@ fun main() {
         .groupBy { it.tipo }
         .forEach{println(it)}
 
-    println("--------------------- adição de um novo funcionário")
-    funcionarios
+
 }
 
 data class Funcionario (
